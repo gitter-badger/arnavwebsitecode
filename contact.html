@@ -1,0 +1,88 @@
+<!Doctype Html>
+<html>
+    <head>
+      <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+      <title>Contact Us</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="Arnavgadade22.jpg" width="80px" alt="Background Image"></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+				  <li><a href="blog.html">BLOGS</a></li>
+				  <li><a href="project.html">PROJECTS</a></li>
+				  <li><a href="book.html">BOOK</a></li>
+                  <li><a href="contactsoon.html">CONTACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+      </section>
+      
+      <!--------Contact Us------->
+      <section class="location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30269.173841143533!2d73.92645823068852!3d18.49965436397414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e9ff81f1aae9%3A0x2560343555ac8b53!2sHadapsar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1624365045102!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <section class="contact-us">
+          <div class="row">
+            <div class="contact-col">
+                   <div>
+                       <i class="fa fa-home"></i>
+                       <span>
+                           <h5>Pune, Hadapsar</h5>
+                           <p>India, Maharashtra</p>
+                       </span>
+                   </div>
+                   <div>
+                       <i class="fa fa-envelope-o"></i>
+                       <span>
+                           <h5>arnavcoder2021@gmail.com</h5>
+                           <p>Email us your query</p>
+                       </span>
+                   </div>
+               </div>
+              <div class="contact-col">
+                   <form action="form-handler.php" method="post">
+                       <input type="text" name="name" placeholder="Enter Your Name" required>
+                       <input type="email" name="email" placeholder="Enter Email Address" required>
+                       <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                       <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                       <button type="submit" class="hero_btn red-btn">Send Message</button>
+                   </form>
+              </div>
+            </div>
+      </section>
+      
+      <!--------Footer------->
+      <section class="footer">
+          <h4>About Me</h4>
+          <p>My name is Arnav Gadade. I am 7 years old. I am fond<br>of coding. So I made this website using HTML, CSS and Javascript.</p>
+          <div class="icons">
+              <i class="fa fa-github"></i>
+          </div>
+          <p>Made with <i class="fa fa-heart-o"> by Arnav Satish Gadade </i></p>
+      </section>
+        
+      <!--------JavaScript for Toggle Menu------->
+      <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+      </script>
+    </body>
+</html>
