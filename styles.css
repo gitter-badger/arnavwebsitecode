@@ -328,3 +328,24 @@ h3{
 .book-blog{
 	text-align: center;
 }
+.book{
+    width: 80%;
+    margin-left: 20%;
+}
+.blog-col{
+	text-align: center;
+}
+.book-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.book-col div p{
+    padding: 10px;
+}
+.book-col div h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #800080;
+    font-weight: 400;
+}

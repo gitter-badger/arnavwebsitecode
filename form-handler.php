@@ -1,20 +1,19 @@
 <?php
     $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subjectName = $_POST['subject'];
+    $visitor_email = $_POST['email'];
     $message = $_POST['message'];
 
     $email_from = 'arnavgadade1404@gmail.com';
-    $subject = $subjectName;
+    $email_subject = $New Form Submission;
     $email_body = "User Name: $name.\n".
-		           "User Email: $email.\n".
-		            "Subject: $subject.\n".
+		           "User Email: $visitor_email.\n".
 		            "User Message: $message.\n";
-    $to = $email;
 
-    $headers = "From: $email_from\r\n";
-    $headers = "Reply-To: $email\r\n";
+    $to = $visitor_email;
 
-    mail($to, $subject, $email_body, $headers);
-    header("Location: contact.com");
+    $headers = "From: $email_from \r\n";
+    $headers .= "Reply-To: $email \r\n";
+
+    mail($to, $email_subject, $email_body, $headers);
+    header("Location: contact.html");
 ?>
